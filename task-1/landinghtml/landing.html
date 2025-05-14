@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="landing.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">LANDING PAGE</div>
+            <div class="contact-info">
+                <span>9693570124</span>
+                <span>nk0590467@gmail.com</span>
+                <button class="btn-consult">Request A Consult</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="buy-btn" href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <p class="subheading">WE ARE CREATIVE</p>
+                <h1>CREATIVE DIGITAL AGENCY</h1>
+                <p id="aboutText">
+                    Creative Digital India Agency is a modern and innovative company that helps businesses grow using digital tools and strategies. In today’s fast-moving world, every company needs a strong online presence to succeed. That’s where this agency comes in. It
+                    provides creative and effective digital solutions to help brands connect with their audience and reach their business goals. This agency offers a wide range of services, such as website design, social media marketing, search engine
+                    optimization (SEO), digital advertising, content creation, and branding. Each service is designed to help businesses improve their visibility on the internet and attract more customers. One of the main strengths of Creative Digital
+                    India Agency is its team. The agency is made up of young, talented, and experienced professionals who understand how digital platforms work. They use their skills to create custom strategies for every client. Whether it’s a small startup
+                    or a large company, the agency treats every project with care and dedication.Another big advantage of this agency is its creative approach. They don’t just copy what others are doing — they try to think outside the box and come up
+                    with new, fresh ideas. This helps businesses stand out from their competitors and build a unique identity online. For example, if a business wants to launch a new product, the agency can design an attractive website, create engaging
+                    content, run ad campaigns, and manage social media posts — all in one place. This saves time and money for the business, and also makes the marketing more effective.</p>
+                <div class="hero-buttons">
+                    <button class="btn-pink" onclick="toggleReadMore()">Read More</button>
+                    <a href="request-consult.html" class="btn-outline" onclick="expandText()">REQUEST A CONSULT</a>
+
+                </div>
+
+            </div>
+        </div>
+        <script>
+            const aboutText = document.getElementById('aboutText');
+
+            function toggleReadMore() {
+                aboutText.classList.toggle('expanded');
+            }
+
+            function expandText() {
+                aboutText.classList.add('expanded');
+                aboutText.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+    </section>
+
+    <section class="features">
+        <div class="feature-item">🚀
+            <h3>Launch Business</h3>
+            <p>Industry standard dummy text.</p>
+        </div>
+        <div class="feature-item">💬
+            <h3>Online Support Team</h3>
+            <p>Industry standard dummy text.</p>
+        </div>
+        <div class="feature-item">⏰
+            <h3>Time Management</h3>
+            <p>Industry standard dummy text.</p>
+        </div>
+    </section>
+
+    <div class="about-section">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p><strong>15 years, we are passionate about achieving better results for our clients</strong></p>
+            For over 15 years, we have been driven by a simple goal — delivering better, smarter, and more impactful results for our clients. Our journey has been powered by curiosity, innovation, and the relentless pursuit of excellence in everything we do.
+            <p>
+                <span class="more-text" id="moreText">
+                    I bring a fresh perspective fueled by modern learning, emerging technologies, and a strong desire to solve real-world problems. I believe that no matter your age or background, true value comes from understanding challenges and applying creativity and logic to overcome them.
+                    Our team includes experienced professionals, mentors, and learners united by a passion for progress. We work across industries and ideas — whether it's in technology, design, or user experience — always with a commitment to innovation and long-term results.
+                    From concept to execution, we ensure that every solution is practical, user-focused, and built for the future. Every project is a learning opportunity and a chance to create meaningful impact.
+            </span>
+            </p>
+            <button class="read-more-btn" onclick="toggleText()">READ MORE</button>
+        </div>
+        <div class="about-image">
+            <img src="https://img.freepik.com/free-photo/man-with-hand-chin-looking-ceiling_23-2147574152.jpg?semt=ais_hybrid&w=740" alt="About Image" height="200px" ,width="50px">
+        </div>
+    </div>
+
+    <script>
+        function toggleText() {
+            const moreText = document.getElementById("moreText");
+            const btn = document.querySelector(".read-more-btn");
+
+            if (moreText.style.display === "inline") {
+                moreText.style.display = "none";
+                btn.innerText = "READ MORE";
+            } else {
+                moreText.style.display = "inline";
+                btn.innerText = "SHOW LESS";
+            }
+        }
+    </script>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+
+            <div class="card">
+                <a href="user-experience.html" target="_blank">
+                    <img src="https://www.shutterstock.com/image-photo/ux-developer-ui-designer-brainstorming-260nw-2479369379.jpg" alt="Man Thinking" Height="100px" ,Width="20px"" alt="User Experience">
+                    <h3>User Experience</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="creative-design.html">
+                    <img src="https://media.istockphoto.com/id/1483745473/photo/graphic-designer-works-on-computer-laptop-with-digital-pen-scrutinize.jpg?s=612x612&w=is&k=20&c=ElMVZIHU6MGhdehSgoHAgwQqbJR03lj48w5ValxJTQY=" alt="Creative Design" Height="100px" ,Width="80px"
+                        alt="Creative Design ">
+                    <h3>Creative Design</h3>
+                </a>
+            </div>
+
+            <div class="card ">
+                <a href="retina-ready.html">
+                    <img src="https://www.syntacticsinc.com/wp-content/uploads/2020/04/Syntactics-SEO-BLOG-MAINTENANCE-4-OMD-January-2025-Everything-You-Need-To-Know-About-Retina-Ready-Design.png " alt="Retina Ready Design " Height="100px " ,Width="20px
+                    " alt="Retina Ready ">
+                    <h3>Retina Ready</h3>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
